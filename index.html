@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de entrada y salida</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="limit-container">
+        <div class="reloj">
+            <p id="tiempo">00:00:00</p>
+        </div>
+        <div class="formulario">
+            <form action="#">
+                <input id="nombre" type="text" placeholder="Ingresa tu nombre" autocomplete="off">
+                <div class="botones">
+                    <button type="reset" onclick="capturar(0);">Entrada</button>
+                    <button type="reset" onclick="capturar(1);">Salida</button>
+                </div>
+            </form>
+        </div>
+        <div class="tabla">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Estado</td>
+                        <td>Hora</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/tiempo.js"></script>
+    <script src="js/actualizar-datos.js"></script>
+</body>
+</html>
